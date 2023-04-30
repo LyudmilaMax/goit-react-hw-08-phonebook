@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { addContact } from '../../operations/operations';
+import { addContact } from '../../redux/contacts/operations';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
-import { nanoid } from 'nanoid';
+
 import {
   Form,
   FormField,
@@ -21,7 +21,7 @@ const ContactSchema = Yup.object().shape({
 });
 
 export function ContactForm({ onSubmit }) {
-  let contacts = useSelector(state => state.contacts.values);
+  let contacts = useSelector(state => state.contacts.items);
   const dispatch = useDispatch();
 
   return (
@@ -31,12 +31,7 @@ export function ContactForm({ onSubmit }) {
         number: '',
       }}
       validationSchema={ContactSchema}
-      onSubmit={(values, actions) => {
-        let newContact = {
-          ...values,
-          id: nanoid(),
-        };
-
+      onSubmit={(newContact, actions) => {
         if (
           contacts.some(
             item => item.name.toLowerCase() === newContact.name.toLowerCase()
