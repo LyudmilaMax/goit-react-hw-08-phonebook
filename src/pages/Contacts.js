@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import { LayoutContact } from 'components/LayoutContact/LayoutContact';
 import { ContactList } from 'components/ContactList/ContactList';
