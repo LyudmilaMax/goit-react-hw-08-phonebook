@@ -40,20 +40,3 @@ export default function Contacts() {
     </>
   );
 }
-
-/*
-
-
-    return (
-      <>
-        <Helmet>
-          <title>Your contacts</title>
-        </Helmet>
-        <ContactEditor />
-        <div>{isLoading && 'Request in progress...'}</div>
-        <ContactList />
-      </>
-    );
-
-
-   */

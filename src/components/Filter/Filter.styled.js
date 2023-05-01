@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const Input = styled.input`
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: 20px auto;
   width: 300px;
-  height: 24px;
+  height: 30px;
   padding: 4px 8px;
   border-radius: 4px;
   border: 1px solid rgba(4, 106, 111, 0.95);

@@ -4,11 +4,8 @@ export const ContainerContact = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin: 50px auto;
-  padding: 16px;
+  padding: 32px;
   align-items: center;
-  width: 600px;
-  background-color: rgba(201, 231, 234, 0.7);
+  background-color: rgba(236, 243, 245, 0.88);
   box-shadow: 0px 0px 8px 0px #33333347;
-  border-radius: 10px;
 `;
