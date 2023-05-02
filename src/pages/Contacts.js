@@ -1,11 +1,9 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-
 import { LayoutContact } from 'components/LayoutContact/LayoutContact';
 import { ContactList } from 'components/ContactList/ContactList';
 import { ContactForm } from 'components/ContactForm/ContactForm';
 import { Filter } from 'components/Filter/Filter';
-
 import { fetchContacts } from 'redux/contacts/operations';
 
 export default function Contacts() {
